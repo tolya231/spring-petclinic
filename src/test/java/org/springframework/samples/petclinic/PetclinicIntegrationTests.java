@@ -16,6 +16,8 @@
 
 package org.springframework.samples.petclinic;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -35,5 +37,17 @@ public class PetclinicIntegrationTests {
     public void testFindAll() throws Exception {
         vets.findAll();
         vets.findAll(); // served from cache
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void testZero() {
+        int z = 0;
+        int x = 5 / z;
+    }
+
+    @Test
+    public void test() {
+        assertThat(5).isEqualTo(4);
+
     }
 }
