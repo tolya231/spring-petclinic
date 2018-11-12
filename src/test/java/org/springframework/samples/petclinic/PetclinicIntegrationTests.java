@@ -16,11 +16,8 @@
 
 package org.springframework.samples.petclinic;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.samples.petclinic.vet.VetRepository;
@@ -43,11 +40,5 @@ public class PetclinicIntegrationTests {
     public void testZero() {
         int z = 0;
         int x = 5 / z;
-    }
-
-    @Test
-    public void test() {
-        assertThat(5).isEqualTo(4);
-
     }
 }
