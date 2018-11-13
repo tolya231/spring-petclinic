@@ -35,10 +35,4 @@ public class PetclinicIntegrationTests {
         vets.findAll();
         vets.findAll(); // served from cache
     }
-
-    @Test(expected = ArithmeticException.class)
-    public void testZero() {
-        int z = 0;
-        int x = 5 / z;
-    }
 }
